@@ -53,11 +53,10 @@ function newNonPlayableCharacter(x, y) {
         stop()
     }
 
-     async function stop(time) {
+    function stop() {
         direction = null
         element.src = `./assets/red-character/static.gif`
-        await sleep(time);
-        stop()
+        
     }
 
     return {
